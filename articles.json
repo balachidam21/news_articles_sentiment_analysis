@@ -1,0 +1,42 @@
+{
+    "articles" : [{
+        "article_id" : 1,
+        "article_link" : "https://www.aljazeera.com/news/2022/5/23/floods-hit-south-africas-kwazulu-natal-province-again"
+    },
+    {
+        "article_id": 2,
+        "article_link": "https://www.aljazeera.com/news/2022/3/18/mozambique-cyclone-gombe-death-toll-rises-to-53"
+    },
+    {
+        "article_id": 3,
+        "article_link": "https://www.aljazeera.com/news/2022/3/4/mozambique-announces-new-prime-minister-and-finance-minister"
+    },
+    {
+        "article_id": 4,
+        "article_link": "https://www.aljazeera.com/economy/2022/3/1/analysis-can-african-gas-replace-russian-supplies-to-europe"
+    },
+    {
+        "article_id": 5,
+        "article_link": "https://www.aljazeera.com/news/2022/1/27/at-least-70-dead-from-tropical-storm-ana-in-southern-africa"
+    },
+    {
+        "article_id": 6,
+        "article_link": "https://www.aljazeera.com/news/2022/1/12/southern-africa-bloc-sadc-extends-mozambique-mission"
+    },
+    {
+        "article_id": 7,
+        "article_link": "https://www.aljazeera.com/news/2021/9/24/in-mozambique-kagame-says-rwandan-troops-presence-to-continue"
+    },
+    {
+        "article_id": 8,
+        "article_link": "https://www.aljazeera.com/news/2021/8/8/rwanda-mozambique-forces-recapture-port-city-from-rebels"
+    },
+    {
+        "article_id": 9,
+        "article_link": "https://www.aljazeera.com/news/2021/7/10/rwanda-deploys-1000-soldiers-to-mozambique-cabo-delgado"
+    },{
+        "article_id": 10,
+        "article_link": "https://www.aljazeera.com/news/2021/6/23/southern-african-nations-agree-to-deploy-forces-to-mozambique"
+    }
+    ]
+}
