@@ -1,5 +1,4 @@
 import json
-from tokenize import group
 import requests
 from tqdm import tqdm
 from bs4 import BeautifulSoup
@@ -41,7 +40,7 @@ def preprocess(filename):
                                          "UsCode",
                                          "FinderTV",
                                          "Source",
-                                         "\"Source",
+                                         "\"Source ",
                                          "Al",
                                         )):
                 sentences.pop(-1)
@@ -78,9 +77,6 @@ def visualize(df):
 
         
 
-        
-        
-        
 
 text_df = preprocess('articles.json')
 sentiment_df = compute_sentiment(text_df)
