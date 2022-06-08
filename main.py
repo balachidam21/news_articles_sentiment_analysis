@@ -1,4 +1,5 @@
 import json
+from time import time
 import requests
 from tqdm import tqdm
 from bs4 import BeautifulSoup
@@ -77,10 +78,11 @@ def visualize(df):
 
         
 
-
+start_time = time()
 text_df = preprocess('articles.json')
 sentiment_df = compute_sentiment(text_df)
 visualize(sentiment_df)
-
+end_time = time()
+print(end_time - start_time)
 
 
