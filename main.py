@@ -1,10 +1,12 @@
 import json
+from tokenize import group
 import requests
 from tqdm import tqdm
 from bs4 import BeautifulSoup
 from textblob import TextBlob
 import spacy
 import pandas as pd
+import plotly.express as px
 
 # Spacy is a NLP library in Python. 
 # Load English tokenizer, tagger, parser and NER
@@ -61,7 +63,18 @@ def compute_sentiment(df):
     df[["Polarity","Subjectivity"]] = df["Sentences"].apply(get_sentiment)
     return df
     
-    
+def visualize(df):
+    polartiy_df = df.groupby(["Article Id"])["Polarity"].mean()
+    subjectivity_df = df.groupby(["Article Id"])["Subjectivity"].mean()
+    fig = px.bar(polartiy_df)
+    fig.write_image('pic1.jpg')
+    # print(subjectivity_df)
+    fig1 = px.bar(subjectivity_df)
+    fig1.write_image('pic2.jpg')
+    # fig = px.histogram(df, x='Article Id',y='Polarity')
+    # fig.show()
+    return
+
 
         
 
@@ -71,6 +84,7 @@ def compute_sentiment(df):
 
 text_df = preprocess('articles.json')
 sentiment_df = compute_sentiment(text_df)
+visualize(sentiment_df)
 
 
 
